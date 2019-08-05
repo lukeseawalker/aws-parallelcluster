@@ -19,7 +19,6 @@ from tests.common.schedulers_common import get_scheduler_commands
 from tests.storage.storage_common import verify_directory_correctly_shared
 
 
-@pytest.mark.regions(["us-west-2", "cn-north-1", "us-gov-west-1"])
 @pytest.mark.instances(["c4.xlarge", "c5.xlarge"])
 @pytest.mark.schedulers(["sge", "awsbatch"])
 @pytest.mark.usefixtures("region", "os", "instance")
