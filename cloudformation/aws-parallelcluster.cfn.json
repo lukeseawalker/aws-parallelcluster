@@ -197,6 +197,7 @@
       "AllowedValues": [
         "centos6",
         "centos7",
+        "rhel7",
         "alinux",
         "alinux2",
         "ubuntu1604",
@@ -1141,6 +1142,10 @@
       },
       "centos7": {
         "User": "centos",
+        "RootDevice": "/dev/sda1"
+      },
+      "rhel7": {
+        "User": "ec2-user",
         "RootDevice": "/dev/sda1"
       },
       "alinux": {

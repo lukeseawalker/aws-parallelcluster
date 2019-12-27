@@ -46,7 +46,7 @@ FSX_MESSAGES = {
     }
 }
 
-FSX_SUPPORTED_OSES = ["centos7", "ubuntu1604", "ubuntu1804", "alinux", "alinux2"]
+FSX_SUPPORTED_OSES = ["centos7", "rhel7", "ubuntu1604", "ubuntu1804", "alinux", "alinux2"]
 
 
 def _get_sts_endpoint():
@@ -330,7 +330,7 @@ def efa_validator(param_key, param_value, pcluster_config):
             "to one of the following values : {1}".format(param_value, allowed_instances)
         )
 
-    allowed_oses = ["alinux", "alinux2", "centos7", "ubuntu1604", "ubuntu1804"]
+    allowed_oses = ["alinux", "alinux2", "centos7", "rhel7", "ubuntu1604", "ubuntu1804"]
     if cluster_section.get_param_value("base_os") not in allowed_oses:
         errors.append(
             "When using 'enable_efa = {0}' it is required to set the 'base_os' parameter "
@@ -829,7 +829,7 @@ def intel_hpc_validator(param_key, param_value, pcluster_config):
     errors = []
     warnings = []
 
-    allowed_oses = ["centos7"]
+    allowed_oses = ["centos7", "rhel7"]
 
     cluster_section = pcluster_config.get_section("cluster")
     if param_value and cluster_section.get_param_value("base_os") not in allowed_oses:
