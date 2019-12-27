@@ -405,7 +405,7 @@ CLUSTER = {
             ("base_os", {
                 "default": "alinux",
                 "cfn_param_mapping": "BaseOS",
-                "allowed_values": ["alinux", "ubuntu1604", "ubuntu1804", "centos6", "centos7"],
+                "allowed_values": ["alinux", "ubuntu1604", "ubuntu1804", "centos6", "centos7", "rhel7"],
             }),
             ("scheduler", {
                 "default": "sge",
