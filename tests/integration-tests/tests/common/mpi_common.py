@@ -8,6 +8,7 @@ from tests.common.schedulers_common import get_scheduler_commands
 OS_TO_OPENMPI_MODULE_MAP = {
     "alinux": "openmpi",
     "centos7": "openmpi",
+    "rhel7": "openmpi",
     "ubuntu1604": "openmpi",
     "centos6": "openmpi-x86_64",
     "ubuntu1804": "openmpi",

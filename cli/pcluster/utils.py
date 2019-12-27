@@ -382,7 +382,7 @@ def get_latest_alinux_ami_id():
             .get("Value")
         )
     except ClientError as e:
-        error("Unable to retrieve Amazon Linux AMI id.\n{0}".format(e.response.get("Error").get("Message")))
+        error("Unable to retrieve Amazon Linux AMI id.\n{0}".format(e.response.get("Error").get("Message")), fail_on_error=False)
 
     return alinux_ami_id
 

@@ -30,6 +30,7 @@ class RemoteCommandExecutor:
         "alinux": "ec2-user",
         "centos6": "centos",
         "centos7": "centos",
+        "rhel7": "centos",
         "ubuntu1604": "ubuntu",
         "ubuntu1804": "ubuntu",
     }

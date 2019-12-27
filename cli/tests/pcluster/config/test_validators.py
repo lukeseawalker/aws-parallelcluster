@@ -646,6 +646,7 @@ def test_fsx_id_validator(mocker, boto3_stubber, fsx_vpc, ip_permissions, networ
     "section_dict, expected_message",
     [
         ({"enable_intel_hpc_platform": "true", "base_os": "centos7"}, None),
+        ({"enable_intel_hpc_platform": "true", "base_os": "rhel7"}, None),
         ({"enable_intel_hpc_platform": "true", "base_os": "alinux"}, "it is required to set the 'base_os'"),
         ({"enable_intel_hpc_platform": "false", "base_os": "alinux"}, None),
     ],
