@@ -2,6 +2,8 @@
 CHANGELOG
 =========
 
+NEW feature
+
 2.7.0
 =====
 
